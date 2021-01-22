@@ -3,9 +3,13 @@ BERT model trained for predicting scores for various categories given poetry. Bo
 
 
 ## Setup
-```bash
-echo TODO
+Download the score file named as *normalized_scores.csv* with a mapping from poems to scores and a line ending token *<br>*.
+```shell
+wget https://raw.githubusercontent.com/ndarr/pairwise-preference-learning/main/scores/normalized_scores.csv
 ```
 
-## Training
-echo TODO
+## Run
+Follow the code in *BertPoems.ipynb*. The BERT model to be used can be varied by asigning a different name to the variable bert_name in the second cell.
+
+## Analysis
+The produced losses and models can be used for further investigation by running the cells in *BERT_Poems_Analysis.ipynb*.
