@@ -7,6 +7,11 @@ Download the score file named as *normalized_scores.csv* with a mapping from poe
 ```shell
 wget https://raw.githubusercontent.com/ndarr/pairwise-preference-learning/main/scores/normalized_scores.csv
 ```
+For local run make sure to have all dependencies installed which are already present in Google Colab.
+```shell
+pip install transformers numpy torch sklearn tqdm matplotlib
+```
+
 
 ## Run
 Follow the code in *BertPoems.ipynb*. The BERT model to be used can be varied by asigning a different name to the variable bert_name in the second cell.
